@@ -12,7 +12,7 @@ const Navbar = () => {
         <NavList />
       </div>
         <div className="flex gap-3 items-center">
-          <a className={cn('max-sm:hidden flex items-center gap-2 px-1 font-bold text-white underline')} href="https://docs.google.com/forms/d/e/1FAIpQLScQihABsjtr_6ul80Fz2kPI3QWH7f8p2CZa7ZnnmL1qEjk22w/viewform">Book Now</a>
+          <a href="https://www.ieeetechfutures2024/register" className={cn('max-sm:hidden flex items-center gap-2 px-1 font-bold text-white underline')}>Book Now</a>
           <MobileNav />
         </div>
     </div>

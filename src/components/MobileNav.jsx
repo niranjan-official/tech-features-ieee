@@ -59,17 +59,29 @@ const MobileNav = () => {
                           className={cn(
                             "w-full flex gap-3 items-center p-4 pr-10",
                             {
-                              "bg-fuchsia-600/40 rounded-xl shadow-md": isActive,
+                              "bg-fuchsia-600/40 rounded-xl shadow-md":
+                                isActive,
                             }
                           )}
                         >
-                          <span className="text-lg font-aurora text-white">{obj.title}</span>
+                          <span className="text-lg font-aurora text-white">
+                            {obj.title}
+                          </span>
                         </div>
                       </SheetClose>
                     </a>
                   );
                 })}
-                <button className="p-2 bg-gray-600/20 text-white border border-neutral-200 font-semibold" >Book Now</button>
+                <button
+                  onClick={() =>
+                    window.location.href(
+                      "https://www.ieeetechfutures2024/register"
+                    )
+                  }
+                  className="p-2 bg-gray-600/20 text-white border border-neutral-200 font-semibold focus:outline:none focus:ring-0"
+                >
+                  Book Now
+                </button>
               </div>
             </div>
           </SheetContent>

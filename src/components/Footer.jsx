@@ -22,11 +22,11 @@ const Footer = () => {
         </div>
         
         <div className="overflow-hidden rounded-xl md:mr-8">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3937.3807110727494!2d76.61414617420553!3d9.299493984697854!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b0622984cfaf3af%3A0xd0320f890b6fca5!2sProvidence%20College%20of%20Engineering%20%26%20School%20of%20Business%2C%20Chengannur!5e0!3m2!1sen!2sin!4v1710087103947!5m2!1sen!2sin"
-            className="h-full w-auto"
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3929.283002981089!2d76.3555159740776!3d9.993465673149082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3b080ca6b98ae0f7%3A0xc81786bb40617774!2sRajagiri%20School%20of%20Engineering%20%26%20Technology!5e0!3m2!1sen!2sin!4v1720550112932!5m2!1sen!2sin"
             allowFullScreen=""
-            loading="none"
+            className="h-full w-auto"
+            loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>

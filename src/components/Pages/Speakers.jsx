@@ -25,7 +25,7 @@ const Speakers = () => {
     {
       name: "Rajesh Menon",
       title: "Blockchain Expert, XYZ Solutions",
-      bio: "Dr. Ayesha Khan is a leading researcher in artificial intelligence with over 15 years of experience in the field. Her work focuses on AI ethics and sustainble AI practices",
+      bio: "Rajesh Menon is a blockchain developer and consultant. He has worked on several high-profile blockchain projects and is passionate about educating others on the technology.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
@@ -39,7 +39,7 @@ const Speakers = () => {
     {
       name: "Neha Gupta",
       title: "Cybersecurity Analyst, SecureNet",
-      bio: "Dr. Ayesha Khan is a leading researcher in artificial intelligence with over 15 years of experience in the field. Her work focuses on AI ethics and sustainble AI practices",
+      bio: "Neha Gupta specializes in cybersecurity threat analysis and prevention. She has helped numerous organizations enhance their cybersecurity measures and has been a speaker at various international conferences.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
@@ -53,7 +53,7 @@ const Speakers = () => {
     {
       name: "Anli Kumar",
       title: "IoT Innovator, IoTech Solutions",
-      bio: "Dr. Ayesha Khan is a leading researcher in artificial intelligence with over 15 years of experience in the field. Her work focuses on AI ethics and sustainble AI practices",
+      bio: "Anil Kumar is an expert in Internet of Things (IoT) technologies. He has developed innovative IoT solutions for smart homes and cities and is an advocate for the use of IoT in enhancing everyday life.",
       content: (
         <div className="h-full w-full  flex items-center justify-center text-white">
           <img
