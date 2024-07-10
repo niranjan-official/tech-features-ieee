@@ -3,6 +3,7 @@ import Ayesha from "@/assets/speakers/ayesha.jpeg";
 import Rajesh from "@/assets/speakers/rajesh.jpeg";
 import Neha from "@/assets/speakers/neha.jpeg";
 import Anil from "@/assets/speakers/anil.jpeg";
+import FadeUp from "@/Animations/FadeUp";
 
 const content = [
   {
@@ -39,20 +40,31 @@ const SpeakerList = () => {
   return (
     <div className="lg:hidden flex flex-wrap items-center justify-center text-center">
       {content.map((speaker, index) => (
-        <div className="w-full sm:w-1/2 md:w-1/3 flex flex-col items-center text-center">
-          <img
-            src={speaker.image}
-            className="rounded-full w-full aspect-square p-4"
-            alt=""
-          />
-          <h5 className="text-2xl font-bold">{speaker.name}</h5>
-          <span className="font-extralight text-neutral-200">
-            {speaker.title}
-          </span>
+        <div
+          key={index}
+          className="w-full sm:w-1/2 md:w-1/3 flex flex-col items-center text-center"
+        >
+          <FadeUp>
+            <img
+              src={speaker.image}
+              className="rounded-full w-full aspect-square p-4"
+              alt=""
+            />
+          </FadeUp>
+          <FadeUp>
+            <h5 className="text-2xl font-bold">{speaker.name}</h5>
+          </FadeUp>
+          <FadeUp>
+            <span className="font-extralight text-neutral-200">
+              {speaker.title}
+            </span>
+          </FadeUp>
           {activeSpeaker === index + 1 ? (
-            <p className="text-sm mt-3 mb-8 px-4 text-neutral-300">
-              {speaker.bio}
-            </p>
+            <FadeUp>
+              <p className="text-sm mt-3 mb-8 px-4 text-neutral-300">
+                {speaker.bio}
+              </p>
+            </FadeUp>
           ) : (
             <button
               onClick={() => setActiveSpeaker(index + 1)}

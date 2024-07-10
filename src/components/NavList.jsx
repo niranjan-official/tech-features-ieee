@@ -1,3 +1,4 @@
+import FadeUp from "@/Animations/FadeUp";
 import { NavbarLinks } from "@/constants";
 import { cn } from "@/lib/utils";
 import React, { useEffect, useState } from "react";
@@ -56,7 +57,9 @@ const NavList = () => {
               }
             )}
           >
-            <a href={link.route}>{link.title}</a>
+            <FadeUp delay={key*0.1} >
+              <a href={link.route}>{link.title}</a>
+            </FadeUp>
           </div>
         );
       })}

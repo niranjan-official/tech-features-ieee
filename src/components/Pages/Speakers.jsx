@@ -5,6 +5,7 @@ import Rajesh from "@/assets/speakers/rajesh.jpeg";
 import Neha from "@/assets/speakers/neha.jpeg";
 import Anil from "@/assets/speakers/anil.jpeg";
 import SpeakerList from "../SpeakerList";
+import FadeUp from "@/Animations/FadeUp";
 
 const Speakers = () => {
   const content = [
@@ -72,17 +73,23 @@ const Speakers = () => {
       className="w-full flex flex-col items-center bg-black"
     >
       <div className="w-full flex flex-col items-center p-4 py-8 md:py-16 md:px-12 xl:px-20">
-        <h2 className="text-4xl font-bold font-aurora text-center">
-          Our Event Speakers
-        </h2>
-        <p className="text-center mt-4 text-neutral-300">
-          Our event speakers will captivate and inspire you with their expertise
-          and unique perspectives.
-        </p>
-        <p className="text-neutral-300 mb-5 text-center max-sm:text-sm">
-          ( The images and data's used here are for sample purpose and are not
-          real )
-        </p>
+        <FadeUp>
+          <h2 className="text-4xl font-bold font-aurora text-center">
+            Our Event Speakers
+          </h2>
+        </FadeUp>
+        <FadeUp>
+          <p className="text-center mt-4 text-neutral-300">
+            Our event speakers will captivate and inspire you with their
+            expertise and unique perspectives.
+          </p>
+        </FadeUp>
+        <FadeUp>
+          <p className="text-neutral-300 mb-5 text-center max-sm:text-sm">
+            ( The images and data's used here are for sample purpose and are not
+            real )
+          </p>
+        </FadeUp>
         <StickyScroll content={content} />
         <SpeakerList />
       </div>
