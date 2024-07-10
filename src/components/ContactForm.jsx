@@ -1,5 +1,5 @@
 import React from "react";
-import { Label } from "./ui/label"; 
+import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "@/utils/cn";
 
@@ -10,7 +10,7 @@ export function ContactForm() {
   return (
     <div className="max-w-md w-full max-sm:mx-auto md:ml-10 rounded-none md:rounded-2xl p-4 md:p-8 shadow-inputbg-black">
       <form className="mb-8 mt-4" onSubmit={handleSubmit}>
-      <LabelInputContainer className="mb-4">
+        <LabelInputContainer className="mb-4">
           <Label htmlFor="email">Your Name</Label>
           <Input id="email" placeholder="Enter your name" type="text" />
         </LabelInputContainer>
@@ -55,10 +55,7 @@ const BottomGradient = () => {
   );
 };
 
-const LabelInputContainer = ({
-  children,
-  className,
-}) => {
+const LabelInputContainer = ({ children, className }) => {
   return (
     <div className={cn("flex flex-col space-y-2 w-full", className)}>
       {children}

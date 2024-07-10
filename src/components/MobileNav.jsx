@@ -72,16 +72,12 @@ const MobileNav = () => {
                     </a>
                   );
                 })}
-                <button
-                  onClick={() =>
-                    window.location.href(
-                      "https://www.ieeetechfutures2024/register"
-                    )
-                  }
-                  className="p-2 bg-gray-600/20 text-white border border-neutral-200 font-semibold focus:outline:none focus:ring-0"
+                <a
+                  href="https://www.ieeetechfutures2024/register"
+                  className="p-2 flex justify-center bg-gray-600/20 text-white border border-neutral-200 font-semibold focus:outline:none focus:ring-0"
                 >
                   Book Now
-                </button>
+                </a>
               </div>
             </div>
           </SheetContent>
